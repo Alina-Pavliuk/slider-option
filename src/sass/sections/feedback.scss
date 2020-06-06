@@ -3,7 +3,6 @@
 }
 
 .section-title {
-  
   font-weight: 800;
   font-size: 20px;
   letter-spacing: 1px;
@@ -11,17 +10,36 @@
 }
 
 .feedback-title {
-  color: #111517;
+  color: $main-backcolor;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.slider {
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+  background-color: $second-backcolor;
+}
+
+.slick-slider {
+  position: static;
+}
+
+.graduate-photo {
+  width: 80px;
+  height: 80px;
+  border: 1px solid $second-backcolor;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .graduate-name {
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 29px;
-  color: rgb(255, 107, 8);
-  
+  color: $second-text-color;
   font-weight: 800;
   text-align: center;
 }
@@ -30,7 +48,7 @@
   font-size: 11px;
   letter-spacing: 1px;
   line-height: 17px;
-  color: #858585;
+  color: $paragraph-text-color;
   font-weight: 500;
   text-align: center;
 }
@@ -39,7 +57,7 @@
   font-size: 11px;
   letter-spacing: 1px;
   line-height: 20px;
-  color: #18191d;
+  color: $main-text-color;
   font-weight: 500;
   text-align: center;
 }
@@ -48,14 +66,113 @@
   font-size: 11px;
   letter-spacing: 1px;
   line-height: 20px;
-  color: rgb(255, 107, 8);
+  color: $accent-backcolor;
   font-weight: 500;
-  border-bottom: 2px solid rgb(255, 107, 8);
+  border-bottom: 2px solid $accent-backcolor;
 }
 
-.graduate-photo {
-  width: 80px;
-  height: 80px;
-  border: 1px solid #ffffff;
+.tonia img {
+  position: relative;
+  right: 57px;
+}
+
+.girl18 img {
+  position: relative;
+  right: 0;
+}
+
+.girl15 img {
+  position: relative;
+  right: 15px;
+  top: 10px;
+}
+
+.slick-arrow {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.prev {
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  
+  background-image: url(../../images/feedback-images/arrow-copy.jpg);
+}
+
+.next {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  background-image: url(../../images/feedback-images/copy-rigth.jpg);
+}
+
+.mini-01 {
+  background-image: url(../../images/feedback-images/mini-01.jpg);
+  background-position: 60% 5%;
+}
+
+.mini-02 {
+  background-image: url(../../images/feedback-images/mini-02.jpg);
+  background-position: 20% 15%;
+}
+
+.mini-03 {
+  background-image: url(../../images/feedback-images/mini-03.jpg);
+  background-position: 10% 5%;
+}
+
+.mini-04 {
+  background-image: url(../../images/feedback-images/mini-04.jpg);
+  background-position: 50% 4%;
+}
+
+.mini-05 {
+  background-image: url(../../images/feedback-images/mini-05.jpg);
+  background-position: 10% 5%;
+}
+
+.mini-06 {
+  background-image: url(../../images/feedback-images/mini-06.jpg);
+  background-position: 20% 5%;
+}
+
+.mini-07 {
+  background-image: url(../../images/feedback-images/mini-07.jpg);
+  background-position: 50% 5%;
+}
+
+.small-slider__item {
+  display: block;
+  width: 54px;
+  height: 54px;
+  border: 2px solid ;
   border-radius: 50%;
+  padding: 0;
+  background-color: transparent;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-color: green;
+  margin-right: 10px;
+  outline: none;
+}
+
+.small-slider {
+  width: 190px;
+  margin: 16px auto 0;
+} 
+
+.small-slider .slick-current {
+  border: 2px solid $accent-backcolor;
+  border-radius: 50%;
+}
+
+.small-slider_wrapper {
+  position: relative;
+  width: 100%;
 }
